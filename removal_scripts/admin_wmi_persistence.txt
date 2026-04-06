@@ -1,0 +1,15 @@
+# Run as Administrator
+$Name = "WindowsHealthCheck"
+
+Write-Host "[*] Cleaning WMI Persistence for testing..."
+
+# 1. Remove the Binding (The link)
+Get-WmiObject -Namespace root\subscription -Class __FilterToConsumerBinding -Filter "Filter=""__EventFilter.Name='$Name'""" | Remove-WmiObject
+
+# 2. Remove the Filter (The 'When')
+Get-WmiObject -Namespace root\subscription -Class __EventFilter -Filter "Name='$Name'" | Remove-WmiObject
+
+# 3. Remove the Consumer (The 'What')
+Get-WmiObject -Namespace root\subscription -Class CommandLineEventConsumer -Filter "Name='$Name'" | Remove-WmiObject
+
+Write-Host "[SUCCESS] WMI Persistence '$Name' has been deleted."

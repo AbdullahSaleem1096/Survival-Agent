@@ -1,0 +1,4 @@
+Run the following commands as administrator to remove the service persistence:
+
+sc.exe stop WindowsUpdateAssist
+sc.exe delete WindowsUpdateAssist
