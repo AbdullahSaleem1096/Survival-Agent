@@ -23,3 +23,6 @@ int main() {
 
 // run this command to compile the code
 // x86_64-w64-mingw32-g++ registry_run_key.cpp -o registry_run_key.exe
+
+// we can find the registry key in the regedit
+// HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run

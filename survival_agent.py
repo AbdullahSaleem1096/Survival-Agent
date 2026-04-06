@@ -4,7 +4,7 @@ import os
 import datetime
 
 # These are the techniques to monitor continuously
-TECHNIQUES = ["run_key", "winlogon", "dll_hijack", "windows_service"]
+TECHNIQUES = ["run_key", "winlogon", "dll_hijack", "windows_service","wmi_event"]
 
 def log_event(message):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -35,6 +35,11 @@ def check_health(technique):
         elif technique == "windows_service":
             # Checks if the Service is registered and running
             proc = subprocess.run(["python", "sentinel_monitors/check_service.py"])
+            return proc.returncode == 0
+
+        elif technique == "wmi_event":
+            # Call the MONITOR script, not the installer!
+            proc = subprocess.run(["python", "sentinel_monitors/check_wmi.py"])
             return proc.returncode == 0
             
     except Exception as e:
