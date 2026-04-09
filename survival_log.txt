@@ -121,3 +121,40 @@
 [2026-04-09 12:26:06] HEALTH OK: dll_hijack is active and running.
 [2026-04-09 12:26:06] FAILURE DETECTED: windows_service removed by system/user.
 [2026-04-09 12:26:06] FAILURE DETECTED: wmi_event removed by system/user.
+[2026-04-09 12:41:23] Monitoring started for techniques: run_key, winlogon, dll_hijack, windows_service, wmi_event
+[2026-04-09 12:41:24] FAILURE DETECTED: run_key removed by system/user.
+[2026-04-09 12:41:24] FAILURE DETECTED: winlogon removed by system/user.
+[2026-04-09 12:41:24] HEALTH OK: dll_hijack is active and running.
+[2026-04-09 12:41:24] FAILURE DETECTED: windows_service removed by system/user.
+[2026-04-09 12:41:24] FAILURE DETECTED: wmi_event removed by system/user.
+[2026-04-09 12:41:55] FAILURE DETECTED: run_key removed by system/user.
+[2026-04-09 12:41:55] FAILURE DETECTED: winlogon removed by system/user.
+[2026-04-09 12:41:55] FAILURE DETECTED: dll_hijack removed by system/user.
+[2026-04-09 12:41:55] FAILURE DETECTED: windows_service removed by system/user.
+[2026-04-09 12:41:55] FAILURE DETECTED: wmi_event removed by system/user.
+[2026-04-09 12:42:22] Monitoring started for techniques: run_key, winlogon, dll_hijack, windows_service, wmi_event
+[2026-04-09 12:42:22] HEALTH OK: run_key is active and running.
+[2026-04-09 12:42:22] FAILURE DETECTED: winlogon removed by system/user.
+[2026-04-09 12:42:22] FAILURE DETECTED: dll_hijack removed by system/user.
+[2026-04-09 12:42:22] FAILURE DETECTED: windows_service removed by system/user.
+[2026-04-09 12:42:23] FAILURE DETECTED: wmi_event removed by system/user.
+[2026-04-09 12:42:53] FAILURE DETECTED: run_key removed by system/user.
+[2026-04-09 12:42:53] FAILURE DETECTED: winlogon removed by system/user.
+[2026-04-09 12:42:53] FAILURE DETECTED: dll_hijack removed by system/user.
+[2026-04-09 12:42:53] FAILURE DETECTED: windows_service removed by system/user.
+[2026-04-09 12:42:53] FAILURE DETECTED: wmi_event removed by system/user.
+[2026-04-09 12:43:23] FAILURE DETECTED: run_key removed by system/user.
+[2026-04-09 12:43:23] FAILURE DETECTED: winlogon removed by system/user.
+[2026-04-09 12:43:24] FAILURE DETECTED: dll_hijack removed by system/user.
+[2026-04-09 12:43:24] FAILURE DETECTED: windows_service removed by system/user.
+[2026-04-09 12:43:24] FAILURE DETECTED: wmi_event removed by system/user.
+[2026-04-09 12:43:54] FAILURE DETECTED: run_key removed by system/user.
+[2026-04-09 12:43:54] HEALTH OK: winlogon is active and running.
+[2026-04-09 12:43:54] FAILURE DETECTED: dll_hijack removed by system/user.
+[2026-04-09 12:43:54] FAILURE DETECTED: windows_service removed by system/user.
+[2026-04-09 12:43:55] FAILURE DETECTED: wmi_event removed by system/user.
+[2026-04-09 12:44:25] FAILURE DETECTED: run_key removed by system/user.
+[2026-04-09 12:44:25] FAILURE DETECTED: winlogon removed by system/user.
+[2026-04-09 12:44:25] FAILURE DETECTED: dll_hijack removed by system/user.
+[2026-04-09 12:44:25] FAILURE DETECTED: windows_service removed by system/user.
+[2026-04-09 12:44:26] FAILURE DETECTED: wmi_event removed by system/user.

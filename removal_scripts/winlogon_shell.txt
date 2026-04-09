@@ -1,0 +1,4 @@
+# Run the following command as Administrator to restore the Winlogon Shell:
+
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name "Shell" -Value "explorer.exe" -Force
+Write-Host "[SUCCESS] Winlogon Shell persistence restored to default (explorer.exe)."

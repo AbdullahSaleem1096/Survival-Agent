@@ -1,0 +1,4 @@
+# Run the following commands as Administrator to remove the hijacked DLL:
+
+Remove-Item -Path "C:\Program Files\Internet Explorer\suspend.dll" -Force
+Write-Host "[SUCCESS] Hijacked DLL removed from Internet Explorer directory."

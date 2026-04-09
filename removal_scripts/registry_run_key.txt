@@ -1,0 +1,4 @@
+# Run the following command to remove the Registry Run Key persistence:
+
+Remove-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "SurvivalAgent" -Force
+Write-Host "[SUCCESS] Registry Run Key persistence removed."
