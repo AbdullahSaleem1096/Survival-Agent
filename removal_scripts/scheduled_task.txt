@@ -1,0 +1,4 @@
+# Run the following command (as Administrator if the task was created with high privileges) to remove the Scheduled Task persistence:
+
+schtasks /Delete /TN "MyScheduledTask" /F
+Write-Host "[SUCCESS] Scheduled Task persistence removed."
