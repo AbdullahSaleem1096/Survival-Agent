@@ -73,6 +73,7 @@ def main_loop():
                 log_event(f"HEALTH OK: {technique} is active and running.")
                 
         time.sleep(30) # 30-second interval per Requirement A
+        print("\n")
 
 if __name__ == "__main__":
     main_loop()

