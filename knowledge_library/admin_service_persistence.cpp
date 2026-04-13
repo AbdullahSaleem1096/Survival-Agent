@@ -65,8 +65,19 @@ int main() {
     
     if (!hService) {
         if (GetLastError() == ERROR_SERVICE_EXISTS) {
-            std::cout << "[INFO] Service already exists. Trying to start it..." << std::endl;
+            std::cout << "[INFO] Service already exists. Reconfiguring and starting it..." << std::endl;
             hService = OpenServiceA(hSCManager, serviceName, SERVICE_ALL_ACCESS);
+            if (hService) {
+                if (!ChangeServiceConfigA(
+                    hService,
+                    SERVICE_WIN32_OWN_PROCESS,
+                    SERVICE_AUTO_START,
+                    SERVICE_ERROR_NORMAL,
+                    binPath,
+                    NULL, NULL, NULL, NULL, NULL, NULL)) {
+                    std::cerr << "[-] ChangeServiceConfigA failed. Error: " << GetLastError() << std::endl;
+                }
+            }
         } else {
             std::cerr << "[FAILURE] CreateServiceA failed. Error: " << GetLastError() << std::endl;
             CloseServiceHandle(hSCManager);

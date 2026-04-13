@@ -56,26 +56,26 @@ def verify_deployment(technique_name: str) -> bool:
     
     # Map technique to monitor script dynamically
     if "run_key" in technique_name_lower:
-        monitor_script = "sentinel_monitors/check_run_key.py"
+        monitor_script = "sentinel_monitors/check_registry_run_key.py"
     elif "winlogon" in technique_name_lower:
-        monitor_script = "sentinel_monitors/check_winlogon.py"
+        monitor_script = "sentinel_monitors/check_winlogon_shell.py"
     elif "dll" in technique_name_lower:
-        monitor_script = "sentinel_monitors/check_dll.py"
+        monitor_script = "sentinel_monitors/check_dll_hijack_iexplore.py"
     elif "service" in technique_name_lower:
-        monitor_script = "sentinel_monitors/check_service.py"
+        monitor_script = "sentinel_monitors/check_admin_service_persistence.py"
     elif "wmi" in technique_name_lower:
-        monitor_script = "sentinel_monitors/check_wmi.py"
+        monitor_script = "sentinel_monitors/check_admin_wmi_persistence.py"
     elif "task" in technique_name_lower:
-        monitor_script = "sentinel_monitors/check_task.py"
+        monitor_script = "sentinel_monitors/check_deploy_task.py"
     else:
         # Exact match attempts for previously listed names
         script_map = {
-            "run_key": "sentinel_monitors/check_run_key.py",
-            "winlogon": "sentinel_monitors/check_winlogon.py",
-            "dll_hijack": "sentinel_monitors/check_dll.py",
-            "windows_service": "sentinel_monitors/check_service.py",
-            "wmi_event": "sentinel_monitors/check_wmi.py",
-            "scheduled_task": "sentinel_monitors/check_task.py"
+            "registry_run_key": "sentinel_monitors/check_registry_run_key.py",
+            "winlogon_shell": "sentinel_monitors/check_winlogon_shell.py",
+            "dll_hijack_iexplore": "sentinel_monitors/check_dll_hijack_iexplore.py",
+            "admin_service_persistence": "sentinel_monitors/check_admin_service_persistence.py",
+            "admin_wmi_persistence": "sentinel_monitors/check_admin_wmi_persistence.py",
+            "deploy_task": "sentinel_monitors/check_deploy_task.py"
         }
         monitor_script = script_map.get(technique_name_lower)
         

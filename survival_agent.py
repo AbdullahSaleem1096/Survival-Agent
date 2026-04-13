@@ -4,7 +4,7 @@ import os
 import datetime
 
 # These are the techniques to monitor continuously
-TECHNIQUES = ["run_key", "winlogon", "dll_hijack", "windows_service","wmi_event","scheduled_task"]
+TECHNIQUES = ["registry_run_key", "winlogon_shell", "dll_hijack_iexplore", "admin_service_persistence", "admin_wmi_persistence", "deploy_task"]
 
 def log_event(message):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -17,33 +17,33 @@ def check_health(technique):
     Returns True if healthy, False if deleted/broken.
     """
     try:
-        if technique == "run_key":
+        if technique == "registry_run_key":
             # Checks HKCU Run Key
-            proc = subprocess.run(["python", "sentinel_monitors/check_run_key.py"])
+            proc = subprocess.run(["python", "sentinel_monitors/check_registry_run_key.py"])
             return proc.returncode == 0
 
-        elif technique == "winlogon":
+        elif technique == "winlogon_shell":
             # Checks HKLM Winlogon Shell
-            proc = subprocess.run(["python", "sentinel_monitors/check_winlogon.py"])
+            proc = subprocess.run(["python", "sentinel_monitors/check_winlogon_shell.py"])
             return proc.returncode == 0
 
-        elif technique == "dll_hijack":
+        elif technique == "dll_hijack_iexplore":
             # Checks for suspend.dll in IE folder
-            proc = subprocess.run(["python", "sentinel_monitors/check_dll.py"])
+            proc = subprocess.run(["python", "sentinel_monitors/check_dll_hijack_iexplore.py"])
             return proc.returncode == 0
 
-        elif technique == "windows_service":
+        elif technique == "admin_service_persistence":
             # Checks if the Service is registered and running
-            proc = subprocess.run(["python", "sentinel_monitors/check_service.py"])
+            proc = subprocess.run(["python", "sentinel_monitors/check_admin_service_persistence.py"])
             return proc.returncode == 0
 
-        elif technique == "wmi_event":
+        elif technique == "admin_wmi_persistence":
             # Call the MONITOR script, not the installer!
-            proc = subprocess.run(["python", "sentinel_monitors/check_wmi.py"])
+            proc = subprocess.run(["python", "sentinel_monitors/check_admin_wmi_persistence.py"])
             return proc.returncode == 0
         
-        elif technique == "scheduled_task":
-            proc = subprocess.run(["python", "sentinel_monitors/check_task.py"])
+        elif technique == "deploy_task":
+            proc = subprocess.run(["python", "sentinel_monitors/check_deploy_task.py"])
             return proc.returncode == 0
 
     except Exception as e:
