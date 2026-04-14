@@ -1152,3 +1152,113 @@
 [2026-04-13 21:48:25] HEALTH OK: admin_service_persistence is active and running.
 [2026-04-13 21:48:25] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
 [2026-04-13 21:48:25] FAILURE DETECTED: deploy_task removed by system/user.
+[2026-04-14 16:27:21] Monitoring started for techniques: registry_run_key, winlogon_shell, dll_hijack_iexplore, admin_service_persistence, admin_wmi_persistence, deploy_task
+[2026-04-14 16:27:21] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:27:21] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:27:21] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:27:21] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-14 16:27:25] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:27:25] FAILURE DETECTED: deploy_task removed by system/user.
+[2026-04-14 16:27:55] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:27:55] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:27:55] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:27:55] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-14 16:27:55] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:27:56] FAILURE DETECTED: deploy_task removed by system/user.
+[2026-04-14 16:28:26] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:28:26] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:28:26] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:28:26] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 16:28:26] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:28:26] FAILURE DETECTED: deploy_task removed by system/user.
+[2026-04-14 16:28:56] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:28:56] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:28:56] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:28:56] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 16:28:57] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:28:57] FAILURE DETECTED: deploy_task removed by system/user.
+[2026-04-14 16:29:13] Monitoring started for techniques: registry_run_key, winlogon_shell, dll_hijack_iexplore, admin_service_persistence, admin_wmi_persistence, scheduled_task
+[2026-04-14 16:29:13] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:29:13] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:29:13] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:29:13] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 16:29:13] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:29:13] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:29:44] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:29:44] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:29:44] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:29:44] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 16:29:44] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:29:44] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:30:14] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:30:14] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:30:14] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:30:14] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 16:30:15] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:30:15] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:30:45] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:30:45] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:30:45] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:30:45] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 16:30:45] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:30:45] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:31:15] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:31:15] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:31:15] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:31:16] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 16:31:16] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:31:16] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:31:46] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:31:46] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:31:46] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:31:46] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 16:31:47] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:31:47] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:32:17] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:32:17] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:32:17] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:32:17] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 16:32:17] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:32:17] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:32:47] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:32:47] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:32:47] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:32:47] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 16:32:48] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:32:48] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:33:18] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:33:18] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:33:18] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:33:18] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 16:33:19] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:33:19] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:33:49] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:33:49] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:33:49] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:33:49] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-14 16:33:49] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:33:49] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:34:19] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:34:19] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:34:19] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:34:19] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-14 16:34:20] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:34:20] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:34:50] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:34:50] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:34:50] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:34:50] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-14 16:34:50] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:34:50] HEALTH OK: scheduled_task is active and running.
+[2026-04-14 16:35:20] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:35:20] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:35:21] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:35:21] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-14 16:35:21] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:35:21] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:35:51] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:35:51] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:35:51] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:35:51] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-14 16:35:52] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:35:52] FAILURE DETECTED: scheduled_task removed by system/user.

@@ -4,7 +4,7 @@ import os
 import datetime
 
 # These are the techniques to monitor continuously
-TECHNIQUES = ["registry_run_key", "winlogon_shell", "dll_hijack_iexplore", "admin_service_persistence", "admin_wmi_persistence", "deploy_task"]
+TECHNIQUES = ["registry_run_key", "winlogon_shell", "dll_hijack_iexplore", "admin_service_persistence", "admin_wmi_persistence", "scheduled_task"]
 
 def log_event(message):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -42,8 +42,8 @@ def check_health(technique):
             proc = subprocess.run(["python", "sentinel_monitors/check_admin_wmi_persistence.py"])
             return proc.returncode == 0
         
-        elif technique == "deploy_task":
-            proc = subprocess.run(["python", "sentinel_monitors/check_deploy_task.py"])
+        elif technique == "scheduled_task":
+            proc = subprocess.run(["python", "sentinel_monitors/check_scheduled_task.py"])
             return proc.returncode == 0
 
     except Exception as e:

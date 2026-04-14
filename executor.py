@@ -66,7 +66,7 @@ def verify_deployment(technique_name: str) -> bool:
     elif "wmi" in technique_name_lower:
         monitor_script = "sentinel_monitors/check_admin_wmi_persistence.py"
     elif "task" in technique_name_lower:
-        monitor_script = "sentinel_monitors/check_deploy_task.py"
+        monitor_script = "sentinel_monitors/check_scheduled_task.py"
     else:
         # Exact match attempts for previously listed names
         script_map = {
@@ -75,7 +75,7 @@ def verify_deployment(technique_name: str) -> bool:
             "dll_hijack_iexplore": "sentinel_monitors/check_dll_hijack_iexplore.py",
             "admin_service_persistence": "sentinel_monitors/check_admin_service_persistence.py",
             "admin_wmi_persistence": "sentinel_monitors/check_admin_wmi_persistence.py",
-            "deploy_task": "sentinel_monitors/check_deploy_task.py"
+            "scheduled_task": "sentinel_monitors/check_scheduled_task.py"
         }
         monitor_script = script_map.get(technique_name_lower)
         
