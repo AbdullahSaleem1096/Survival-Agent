@@ -76,4 +76,7 @@ def main_loop():
         print("\n")
 
 if __name__ == "__main__":
-    main_loop()
+    try:
+        main_loop()
+    except KeyboardInterrupt:
+        print("\n[*] Exiting Sentinel-agent. Goodbye!")
