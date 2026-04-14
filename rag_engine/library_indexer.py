@@ -28,8 +28,14 @@ class LibraryIndexer:
             # Using TextLoader for parsing plain text / cpp files to minimize dependencies.
             # We specifically target .cpp files to avoid reading binary files like .exe
             loader = DirectoryLoader(self.source_dir, glob="**/*.cpp", loader_cls=TextLoader)
-            documents = loader.load()
-            print(f"[+] Successfully loaded {len(documents)} document(s).")
+            all_documents = loader.load()
+
+            ignore_file = "windows_service_creation.cpp"
+            documents = [
+                doc for doc in all_documents 
+                if os.path.basename(doc.metadata['source']) != ignore_file
+            ]
+            print(f"[+] Successfully loaded {len(documents)} document(s) (ignored {ignore_file}).")
 
             print("[*] Splitting text into 500-character segments...")
             text_splitter = RecursiveCharacterTextSplitter(

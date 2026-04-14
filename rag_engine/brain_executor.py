@@ -1,6 +1,8 @@
 import requests
 import json
 import re
+import os
+import difflib
 
 def ask_dolphin_for_strategy(json_prompt: str) -> str:
     """
@@ -34,6 +36,22 @@ def ask_dolphin_for_strategy(json_prompt: str) -> str:
         if match:
             target_file = match.group(1).strip()
             print(f"[+] LLM Decision: {target_file}")
+            
+            # Anti-hallucination sanitization against the knowledge library
+
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            klib_dir = os.path.join(base_dir, "knowledge_library")
+            if os.path.exists(klib_dir):
+                valid_files = [f for f in os.listdir(klib_dir) if f.endswith('.cpp')]
+                if target_file not in valid_files:
+                    matches = difflib.get_close_matches(target_file, valid_files, n=1, cutoff=0.5)
+                    if matches:
+                        print(f"[*] Auto-corrected hallucinated filename '{target_file}' to: {matches[0]}")
+                        target_file = matches[0]
+                    else:
+                        print(f"[-] Invalid filename, not found in knowledge_library: {target_file}")
+                        return None
+            
             return target_file
         else:
             print("[-] Parser Error: No [TARGET] tag found in LLM response.")

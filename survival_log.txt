@@ -1262,3 +1262,49 @@
 [2026-04-14 16:35:51] FAILURE DETECTED: admin_service_persistence removed by system/user.
 [2026-04-14 16:35:52] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
 [2026-04-14 16:35:52] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:44:24] Monitoring started for techniques: registry_run_key, winlogon_shell, dll_hijack_iexplore, admin_service_persistence, admin_wmi_persistence, scheduled_task
+[2026-04-14 16:44:25] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:44:25] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:44:25] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:44:26] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-14 16:44:28] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:44:28] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:44:58] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:44:58] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:44:58] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:44:59] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-14 16:44:59] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:44:59] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:45:29] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:45:29] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:45:30] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:45:30] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-14 16:45:30] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:45:30] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 16:46:01] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 16:46:01] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 16:46:01] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 16:46:01] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-14 16:46:02] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 16:46:02] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-14 17:03:26] CRITICAL: registry_run_key.cpp failed.
+[2026-04-14 17:08:44] CRITICAL: registry_run_key.cpp failed.
+[2026-04-14 17:09:27] CRITICAL: registry_run_key.cpp failed.
+[2026-04-14 17:23:54] CRITICAL: registry_run_key.cpp failed.
+[2026-04-14 17:41:14] CRITICAL: registry_run_key.cpp failed.
+[2026-04-14 17:43:28] RECOVERY SUCCESS: Transitioned to admin_service_persistence.cpp
+[2026-04-14 17:43:58] CRITICAL: admin_service_persistence.cpp failed.
+[2026-04-14 17:45:06] RECOVERY SUCCESS: Transitioned to scheduled_task.cpp
+[2026-04-14 17:47:52] Monitoring started for techniques: registry_run_key, winlogon_shell, dll_hijack_iexplore, admin_service_persistence, admin_wmi_persistence, scheduled_task
+[2026-04-14 17:47:52] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 17:47:52] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 17:47:52] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 17:47:52] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 17:47:53] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 17:47:53] HEALTH OK: scheduled_task is active and running.
+[2026-04-14 17:48:23] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-14 17:48:23] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-14 17:48:23] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-14 17:48:24] HEALTH OK: admin_service_persistence is active and running.
+[2026-04-14 17:48:24] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-14 17:48:25] HEALTH OK: scheduled_task is active and running.
