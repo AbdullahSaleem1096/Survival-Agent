@@ -21,7 +21,6 @@ def ask_dolphin_for_strategy(json_prompt: str) -> str:
     }
 
     try:
-        print("[*] Consulting the Dolphin LLM for a survival strategy...")
         response = requests.post(url, json=payload, timeout=300)
         response.raise_for_status()
         
