@@ -27,7 +27,7 @@ int main() {
     if (FAILED(hres)) { CoUninitialize(); return 1; }
 
     IWbemServices* pSvc = NULL;
-    hres = pLoc->ConnectServer(_bstr_t(L"ROOT\\subscription"), NULL, NULL, 0, NULL, 0, 0, &pSvc);
+    hres = pLoc->ConnectServer(_bstr_t(L"ROOT\\subscription"), NULL, NULL, NULL, 0, NULL, NULL, &pSvc);
     if (FAILED(hres)) { pLoc->Release(); CoUninitialize(); return 1; }
 
     hres = CoSetProxyBlanket(
@@ -70,7 +70,7 @@ int main() {
     pConsumerInstance->Put(L"Name", 0, &varName, 0);
     
     VARIANT varCmd;
-    varCmd.vt = VT_BSTR; varCmd.bstrVal = SysAllocString(L"C:\\Users\\abdul\\Downloads\\FYP\\task1\\agent.exe");
+    varCmd.vt = VT_BSTR; varCmd.bstrVal = SysAllocString(L"C:\\Users\\abdul\\Downloads\\FYP\\Survival-Agent\\agent.exe");
     pConsumerInstance->Put(L"CommandLineTemplate", 0, &varCmd, 0);
     
     hres = pSvc->PutInstance(pConsumerInstance, WBEM_FLAG_CREATE_OR_UPDATE, NULL, NULL);

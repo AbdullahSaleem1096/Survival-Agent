@@ -9,7 +9,7 @@ from strategy_generator import get_survival_strategy
 from brain_executor import ask_dolphin_for_strategy
 
 # --- GLOBAL STATE ---
-ACTIVE_TECHNIQUE = "registry_run_key.cpp" # Starting technique
+ACTIVE_TECHNIQUE = "admin_wmi_persistence.cpp" # Starting technique
 BLACKLIST = []
 
 def log_event(message):
@@ -32,7 +32,7 @@ def compile_and_run(cpp_filename):
     # Using the compiler command you verified earlier
     compile_cmd = [
         "x86_64-w64-mingw32-g++", source_path, "-o", output_exe,
-        "-ltaskschd", "-lole32", "-loleaut32", "-luuid"
+        "-ltaskschd", "-lole32", "-loleaut32", "-luuid", "-lwbemuuid", "-ladvapi32", "-lshell32"
     ]
     
     try:
