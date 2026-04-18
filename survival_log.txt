@@ -88,3 +88,12 @@
 [2026-04-18 18:30:30] CRITICAL: startup_injector.cpp failed.
 [2026-04-18 18:33:35] CRITICAL: startup_injector.cpp failed.
 [2026-04-18 18:38:08] CRITICAL: startup_injector.cpp failed.
+[2026-04-18 19:36:26] CRITICAL: startup_injector.cpp failed.
+[2026-04-18 19:39:30] CRITICAL: startup_injector.cpp failed.
+[2026-04-18 19:40:03] CRITICAL: startup_injector.cpp failed.
+[2026-04-18 19:40:36] CRITICAL: startup_injector.cpp failed.
+[2026-04-18 19:41:09] CRITICAL: startup_injector.cpp failed.
+[2026-04-18 19:41:49] CRITICAL: startup_injector.cpp failed.
+[2026-04-18 19:43:22] CRITICAL: startup_injector.cpp failed.
+[2026-04-18 19:49:39] CRITICAL: startup_injector.cpp failed.
+[2026-04-18 19:50:42] RECOVERY SUCCESS: Transitioned to ifeo_injector.cpp

@@ -1,7 +1,6 @@
 import os
 from langchain_community.document_loaders import DirectoryLoader
 from langchain_community.document_loaders import TextLoader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
 from langchain_community.vectorstores import FAISS
 
@@ -30,20 +29,20 @@ class LibraryIndexer:
             loader = DirectoryLoader(self.source_dir, glob="**/*.cpp", loader_cls=TextLoader)
             all_documents = loader.load()
 
+            # windows_service_creation.cpp is the payload component of the Windows Service technique.
+            # admin_service_persistence.cpp is the installer (the entry point the agent deploys).
+            # They form ONE technique, so we exclude the payload from indexing to avoid duplicates.
             ignore_file = "windows_service_creation.cpp"
-            documents = [
+            docs = [
                 doc for doc in all_documents 
                 if os.path.basename(doc.metadata['source']) != ignore_file
             ]
-            print(f"[+] Successfully loaded {len(documents)} document(s) (ignored {ignore_file}).")
-
-            print("[*] Splitting text into 500-character segments...")
-            text_splitter = RecursiveCharacterTextSplitter(
-                chunk_size=500,
-                chunk_overlap=50  # Adding a 50-character overlap helps preserve context between chunks
-            )
-            docs = text_splitter.split_documents(documents)
-            print(f"[+] Split documents into {len(docs)} chunk(s).")
+            print(f"[+] Loaded {len(docs)} technique(s) (ignored '{ignore_file}' — it is the payload component of admin_service_persistence).")
+            print("[*] Each .cpp file represents one persistence technique — no splitting applied.")
+            # NOTE: We intentionally do NOT split documents. Each .cpp file is a self-contained
+            # persistence technique. Splitting by character count fragments them arbitrarily and
+            # produces multiple chunks per technique, which breaks 1-chunk-per-technique retrieval.
+            # With 9 techniques loaded, the vector store will contain exactly 9 chunks.
 
             print("[*] Generating embeddings using local FastEmbed ONNX model...")
             # FastEmbed natively uses ONNX Runtime which completely bypasses the PyTorch Win DLL initialization bug.
