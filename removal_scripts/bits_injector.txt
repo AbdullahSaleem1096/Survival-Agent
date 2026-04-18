@@ -1,0 +1,47 @@
+# Run as Administrator
+Write-Host "[!] Initiating BITS Persistence Cleanup..." -ForegroundColor Yellow
+
+$JobName = "SurvivalTask"
+
+# Method 1: Try bitsadmin (works for jobs owned by current elevated user/SYSTEM)
+Write-Host "[*] Attempting removal via bitsadmin..."
+$result = bitsadmin /cancel $JobName 2>&1
+if ($LASTEXITCODE -eq 0) {
+    Write-Host "[+] bitsadmin successfully cancelled job: $JobName" -ForegroundColor Green
+} else {
+    Write-Host "[-] bitsadmin: $result" -ForegroundColor Gray
+}
+
+# Method 2: Try Get-BitsTransfer -AllUsers (requires admin)
+Write-Host "[*] Attempting removal via Get-BitsTransfer -AllUsers..."
+try {
+    $job = Get-BitsTransfer -AllUsers | Where-Object { $_.DisplayName -eq $JobName }
+    if ($job) {
+        $job | Remove-BitsTransfer
+        Write-Host "[+] Successfully removed BITS job via Get-BitsTransfer: $JobName" -ForegroundColor Green
+    } else {
+        Write-Host "[-] No BITS job found with name: $JobName (may already be removed)" -ForegroundColor Gray
+    }
+} catch {
+    Write-Host "[-] Get-BitsTransfer error: $_" -ForegroundColor Red
+}
+
+# Method 3: Clean up temp file
+$TempFile = "C:\Windows\Temp\bits_cache.tmp"
+if (Test-Path $TempFile) {
+    Remove-Item $TempFile -Force
+    Write-Host "[+] Deleted temporary cache file: $TempFile" -ForegroundColor Green
+} else {
+    Write-Host "[-] No temp file found at: $TempFile" -ForegroundColor Gray
+}
+
+# Final check — list remaining BITS jobs
+Write-Host "`n[*] Remaining BITS jobs (all users):"
+try {
+    $remaining = Get-BitsTransfer -AllUsers | Select-Object DisplayName, JobState
+    if ($remaining) { $remaining | Format-Table } else { Write-Host "    (none)" -ForegroundColor Green }
+} catch {
+    bitsadmin /list /allusers
+}
+
+Write-Host "[*] Cleanup Complete." -ForegroundColor Cyan
