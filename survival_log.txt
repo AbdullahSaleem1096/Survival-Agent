@@ -1,0 +1,3 @@
+[2026-04-18 13:32:17] CRITICAL: bits_injector.cpp failed.
+[2026-04-18 13:49:14] CRITICAL: bits_injector.cpp failed.
+[2026-04-18 13:50:49] RECOVERY SUCCESS: Transitioned to admin_wmi_persistence.cpp
