@@ -4,7 +4,7 @@ import os
 import datetime
 
 # These are the techniques to monitor continuously
-TECHNIQUES = ["registry_run_key", "winlogon_shell", "dll_hijack_iexplore", "admin_service_persistence", "admin_wmi_persistence", "scheduled_task","ifeo_injector","bits_injector","startup_injector"]
+TECHNIQUES = ["registry_run_key", "winlogon_shell", "dll_hijack_iexplore", "admin_service_persistence", "admin_wmi_persistence", "scheduled_task","ifeo_injector","bits_injector","startup_injector","com_injector"]
 
 def log_event(message):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -56,6 +56,10 @@ def check_health(technique):
         
         elif technique == "startup_injector":
             proc = subprocess.run(["python", "sentinel_monitors/check_startup_injector.py"])
+            return proc.returncode == 0
+        
+        elif technique == "com_injector":
+            proc = subprocess.run(["python", "sentinel_monitors/check_com_injector.py"])
             return proc.returncode == 0
 
     except Exception as e:

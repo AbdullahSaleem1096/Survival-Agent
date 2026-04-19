@@ -48,7 +48,7 @@ def get_survival_strategy(failed_technique: str, blacklist: list) -> dict:
     # We fetch all the techniques so the full ranked list is available.
     # FAISS returns (Document, score) pairs sorted by L2 distance — lower score = more similar.
     query = f"persistence technique alternative to {failed_technique}"
-    ranked_results = vector_store.similarity_search_with_score(query, k=9)
+    ranked_results = vector_store.similarity_search_with_score(query, k=10)
 
     # 4. Walk down the ranked list and pick the FIRST non-blacklisted technique.
     # Because the vector store has exactly one chunk per technique, each result maps

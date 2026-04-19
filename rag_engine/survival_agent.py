@@ -9,7 +9,7 @@ from strategy_generator import get_survival_strategy
 from brain_executor import ask_dolphin_for_strategy
 
 # --- GLOBAL STATE ---
-ACTIVE_TECHNIQUE = "startup_injector.cpp" # Starting technique
+ACTIVE_TECHNIQUE = "com_injector.cpp" # Starting technique
 BLACKLIST = []
 
 def log_event(message):

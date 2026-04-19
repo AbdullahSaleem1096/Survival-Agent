@@ -97,3 +97,395 @@
 [2026-04-18 19:43:22] CRITICAL: startup_injector.cpp failed.
 [2026-04-18 19:49:39] CRITICAL: startup_injector.cpp failed.
 [2026-04-18 19:50:42] RECOVERY SUCCESS: Transitioned to ifeo_injector.cpp
+[2026-04-19 17:31:18] Monitoring started for techniques: registry_run_key, winlogon_shell, dll_hijack_iexplore, admin_service_persistence, admin_wmi_persistence, scheduled_task, ifeo_injector, bits_injector, startup_injector
+[2026-04-19 17:31:18] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:31:18] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:31:18] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:31:18] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:31:19] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:31:19] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:31:19] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:31:20] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:31:20] HEALTH OK: startup_injector is active and running.
+[2026-04-19 17:54:16] Monitoring started for techniques: registry_run_key, winlogon_shell, dll_hijack_iexplore, admin_service_persistence, admin_wmi_persistence, scheduled_task, ifeo_injector, bits_injector, startup_injector
+[2026-04-19 17:54:16] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:54:16] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:54:16] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:54:16] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:54:17] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:54:17] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:54:17] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:54:17] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:54:17] HEALTH OK: startup_injector is active and running.
+[2026-04-19 17:54:47] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:54:47] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:54:47] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:54:47] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:54:47] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:54:48] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:54:48] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:54:48] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:54:48] HEALTH OK: startup_injector is active and running.
+[2026-04-19 17:55:18] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:55:18] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:55:18] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:55:18] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:55:18] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:55:18] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:55:18] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:55:18] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:55:18] HEALTH OK: startup_injector is active and running.
+[2026-04-19 17:55:48] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:55:49] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:55:49] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:55:49] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:55:49] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:55:49] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:55:49] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:55:49] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:55:49] HEALTH OK: startup_injector is active and running.
+[2026-04-19 17:56:19] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:56:19] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:56:19] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:56:19] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:56:20] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:56:20] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:56:20] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:56:20] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:56:20] HEALTH OK: startup_injector is active and running.
+[2026-04-19 17:56:50] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:56:50] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:56:50] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:56:50] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:56:51] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:56:51] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:56:51] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:56:51] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:56:51] HEALTH OK: startup_injector is active and running.
+[2026-04-19 17:57:21] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:57:21] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:57:21] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:57:21] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:57:21] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:57:21] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:57:21] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:57:21] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:57:21] HEALTH OK: startup_injector is active and running.
+[2026-04-19 17:57:52] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:57:52] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:57:52] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:57:52] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:57:52] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:57:52] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:57:52] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:57:52] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:57:52] HEALTH OK: startup_injector is active and running.
+[2026-04-19 17:58:22] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:58:22] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:58:22] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:58:22] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:58:23] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:58:23] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:58:23] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:58:23] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:58:23] HEALTH OK: startup_injector is active and running.
+[2026-04-19 17:58:53] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:58:53] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:58:53] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:58:53] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:58:53] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:58:54] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:58:54] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:58:54] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:58:54] HEALTH OK: startup_injector is active and running.
+[2026-04-19 17:59:24] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:59:24] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:59:24] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:59:24] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:59:24] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:59:24] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:59:24] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:59:24] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:59:24] HEALTH OK: startup_injector is active and running.
+[2026-04-19 17:59:55] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 17:59:55] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 17:59:55] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 17:59:55] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 17:59:55] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 17:59:55] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 17:59:55] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 17:59:55] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 17:59:55] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:02:50] Monitoring started for techniques: registry_run_key, winlogon_shell, dll_hijack_iexplore, admin_service_persistence, admin_wmi_persistence, scheduled_task, ifeo_injector, bits_injector, startup_injector, com_injector
+[2026-04-19 18:02:50] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:02:50] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:02:50] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:02:50] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:02:50] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:02:50] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:02:50] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:02:51] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:02:51] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:02:51] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:03:21] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:03:21] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:03:21] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:03:21] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:03:21] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:03:21] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:03:21] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:03:21] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:03:21] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:03:21] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:03:51] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:03:51] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:03:52] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:03:52] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:03:52] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:03:52] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:03:52] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:03:52] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:03:52] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:03:52] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:04:22] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:04:22] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:04:22] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:04:22] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:04:23] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:04:23] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:04:23] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:04:23] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:04:23] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:04:23] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:04:53] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:04:53] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:04:53] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:04:53] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:04:53] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:04:53] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:04:53] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:04:54] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:04:54] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:04:54] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:05:24] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:05:24] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:05:24] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:05:24] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:05:24] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:05:24] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:05:24] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:05:24] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:05:24] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:05:24] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:05:54] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:05:54] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:05:54] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:05:55] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:05:55] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:05:55] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:05:55] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:05:55] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:05:55] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:05:55] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:06:25] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:06:25] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:06:25] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:06:25] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:06:26] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:06:26] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:06:26] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:06:26] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:06:26] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:06:26] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:06:56] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:06:56] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:06:56] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:06:56] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:06:56] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:06:56] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:06:56] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:06:57] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:06:57] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:06:57] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:07:27] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:07:27] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:07:27] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:07:27] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:07:27] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:07:27] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:07:27] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:07:27] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:07:27] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:07:27] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:07:57] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:07:57] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:07:57] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:07:58] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:07:58] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:07:58] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:07:58] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:07:58] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:07:58] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:07:58] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:08:28] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:08:28] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:08:28] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:08:28] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:08:29] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:08:29] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:08:29] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:08:29] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:08:29] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:08:29] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:08:59] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:08:59] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:08:59] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:08:59] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:08:59] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:08:59] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:08:59] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:08:59] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:08:59] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:09:00] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:09:30] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:09:30] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:09:30] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:09:30] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:09:30] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:09:30] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:09:30] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:09:30] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:09:30] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:09:30] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:10:00] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:10:00] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:10:00] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:10:00] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:10:01] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:10:01] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:10:01] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:10:01] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:10:01] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:10:01] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:10:31] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:10:31] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:10:31] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:10:31] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:10:32] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:10:32] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:10:32] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:10:32] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:10:32] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:10:32] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:11:02] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:11:02] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:11:02] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:11:02] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:11:02] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:11:02] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:11:02] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:11:02] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:11:02] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:11:03] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:11:33] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:11:33] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:11:33] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:11:33] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:11:33] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:11:33] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:11:33] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:11:33] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:11:33] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:11:33] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:12:03] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:12:03] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:12:03] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:12:03] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:12:04] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:12:04] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:12:04] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:12:04] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:12:04] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:12:04] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:12:34] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:12:34] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:12:34] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:12:34] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:12:34] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:12:34] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:12:35] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:12:35] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:12:35] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:12:35] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:13:05] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:13:05] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:13:05] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:13:05] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:13:05] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:13:05] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:13:05] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:13:05] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:13:05] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:13:05] HEALTH OK: com_injector is active and running.
+[2026-04-19 18:13:36] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:13:36] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:13:36] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:13:36] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:13:36] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:13:36] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:13:36] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:13:36] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:13:36] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:13:36] FAILURE DETECTED: com_injector removed by system/user.
+[2026-04-19 18:14:06] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:14:06] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:14:06] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:14:06] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:14:07] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:14:07] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:14:07] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:14:07] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:14:07] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:14:07] FAILURE DETECTED: com_injector removed by system/user.
+[2026-04-19 18:14:37] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:14:37] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:14:37] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:14:37] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:14:38] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:14:38] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:14:38] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:14:38] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:14:38] HEALTH OK: startup_injector is active and running.
+[2026-04-19 18:14:38] FAILURE DETECTED: com_injector removed by system/user.
+[2026-04-19 18:15:08] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:15:08] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:15:08] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:15:08] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:15:08] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:15:08] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:15:08] HEALTH OK: ifeo_injector is active and running.
+[2026-04-19 18:15:09] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:15:09] FAILURE DETECTED: startup_injector removed by system/user.
+[2026-04-19 18:15:09] FAILURE DETECTED: com_injector removed by system/user.
+[2026-04-19 18:15:39] FAILURE DETECTED: registry_run_key removed by system/user.
+[2026-04-19 18:15:39] FAILURE DETECTED: winlogon_shell removed by system/user.
+[2026-04-19 18:15:39] FAILURE DETECTED: dll_hijack_iexplore removed by system/user.
+[2026-04-19 18:15:39] FAILURE DETECTED: admin_service_persistence removed by system/user.
+[2026-04-19 18:15:39] FAILURE DETECTED: admin_wmi_persistence removed by system/user.
+[2026-04-19 18:15:39] FAILURE DETECTED: scheduled_task removed by system/user.
+[2026-04-19 18:15:39] FAILURE DETECTED: ifeo_injector removed by system/user.
+[2026-04-19 18:15:39] FAILURE DETECTED: bits_injector removed by system/user.
+[2026-04-19 18:15:39] FAILURE DETECTED: startup_injector removed by system/user.
+[2026-04-19 18:15:39] FAILURE DETECTED: com_injector removed by system/user.
+[2026-04-19 18:18:43] CRITICAL: com_injector.cpp failed.
+[2026-04-19 18:19:48] RECOVERY SUCCESS: Transitioned to ifeo_injector.cpp
+[2026-04-19 18:20:48] CRITICAL: ifeo_injector.cpp failed.
+[2026-04-19 18:21:22] RECOVERY SUCCESS: Transitioned to bits_injector.cpp
+[2026-04-19 18:22:52] CRITICAL: bits_injector.cpp failed.
+[2026-04-19 18:23:25] RECOVERY SUCCESS: Transitioned to admin_wmi_persistence.cpp
+[2026-04-19 18:24:26] CRITICAL: admin_wmi_persistence.cpp failed.
+[2026-04-19 18:25:14] RECOVERY SUCCESS: Transitioned to admin_service_persistence.cpp
+[2026-04-19 18:27:45] CRITICAL: admin_service_persistence.cpp failed.
+[2026-04-19 18:28:48] CRITICAL: admin_service_persistence.cpp failed.
+[2026-04-19 18:29:57] CRITICAL: admin_service_persistence.cpp failed.
+[2026-04-19 18:30:26] RECOVERY SUCCESS: Transitioned to scheduled_task.cpp

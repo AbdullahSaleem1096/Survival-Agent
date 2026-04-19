@@ -1,0 +1,17 @@
+# Configuration - The specific SmartScreen CLSID
+$clsid = "{a463fcb9-6b1c-4e0d-a80b-a2ca7999e25d}"
+$regPath = "HKCU:\Software\Classes\CLSID\$clsid"
+
+Write-Host "[!] Initiating COM Hijack Removal..." -ForegroundColor Yellow
+
+if (Test-Path $regPath) {
+    # Remove the entire CLSID key and all subkeys (InProcServer32)
+    Remove-Item -Path $regPath -Recurse -Force
+    Write-Host "[+] SUCCESS: Hijack removed from HKCU. Windows will now use the system DLL." -ForegroundColor Green
+    
+    # Optional: Restart Explorer to apply changes immediately
+    Write-Host "[*] Restarting Explorer to clear COM cache..." -ForegroundColor Gray
+    Stop-Process -Name explorer -Force
+} else {
+    Write-Host "[-] Hijack not found. System is already clean." -ForegroundColor Gray
+}
